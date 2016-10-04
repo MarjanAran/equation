@@ -33,3 +33,23 @@
 
     </body>
 </html>
+
+
+
+
+function sols(a,b,c){
+        
+                var a=-2;
+                var b=1;
+                var c=2;
+                
+                var determ=Math.sqrt(b*b-4*a*c);
+                var denom=2*a;
+                var x1=(-b+determ)/denom;
+                var x2=(-b-determ)/denom;
+                
+                return(x1);
+                return(x2);
+               
+                
+                }
