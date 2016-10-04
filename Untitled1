@@ -5,7 +5,7 @@
     </head>
     <body>
         <script type="text/javascript">
-        function (a,b,c){
+        <!--
                 var a=Number(prompt("enter 1st coefficient a",""));
                
                 var b=Number(prompt("enter 2nd coefficient b",""));
@@ -15,15 +15,20 @@
                 var denom=2*a;
                 var x1=(-b+determ)/denom;
                 var x2=(-b-determ)/denom;
-        
-                    if(b*b < 4*a*c){
-                    document.write("no real roots exist"+"<br>");
-                    } else {
-                    document.write("x1:"+x1+"<br>");
-                    document.write("x1:"+x2+"<br>"); 
-                    }
                 
-        }
+               
+                function solution(a,b,c){
+                    if(b*b < 4*a*c){
+                    return document.write("no solutions exists"+"<br>");
+                    } else {
+                    return document.write("x1:"+x1+"<br>");
+                    return document.write("x1:"+x2+"<br>"); 
+                    }
+                    
+                }
+                
+                
+        //-->
         </script>
 
     </body>
