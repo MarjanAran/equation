@@ -5,8 +5,9 @@
     </head>
     <body>
         <script type="text/javascript">
+                function sols(a,b,c){
+        
                 var a=Number(prompt("enter 1st coefficient a",""));
-               
                 var b=Number(prompt("enter 2nd coefficient b",""));
                 var c=Number(prompt("enter 3rd coefficient c",""));
                 
@@ -14,13 +15,12 @@
                 var denom=2*a;
                 var x1=(-b+determ)/denom;
                 var x2=(-b-determ)/denom;
-        
-                   if (b*b < 4*a*c){
-                    document.write("no real roots exist"+"<br>");
-                    } else {
-                    document.write("x1:"+x1+"<br>");
-                    document.write("x1:"+x2+"<br>"); 
-                    }
+                
+                return(x1);
+                return(x2);
+               
+                
+                }
                 
         
         </script>
